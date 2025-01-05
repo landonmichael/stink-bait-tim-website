@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: roboto;
 }
 
 .container {
@@ -29,7 +29,6 @@ body {
 .text-row {
   width: 100%;
   display: flex;
-  font-family: roboto;
 }
 
 .text-row p {
@@ -37,7 +36,15 @@ body {
   max-width: 100%;
 }
 
+.text-row h1 {
+  font-family: chewy;
+}
+
 .text-container {
+  /* background-image: url(/images/story-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto; */
   margin: 20px;
 }
 
@@ -46,18 +53,23 @@ body {
   src: url(/assets/fonts/Roboto-Regular.ttf);
 }
 
+@font-face {
+  font-family: chewy;
+  src: url(/assets/fonts/Chewy-Regular.ttf);
+}
+
 /* Media Queries */
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .text-row p {
     font-size: 1.8em;
     max-width: 1400px;
   }
   .text-row h1 {
-    font-size: 3em;
+    font-size: 3.5em;
   }
 }
 
-@media (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   .text-row p {
     font-size: 1.6em;
   }
@@ -66,7 +78,7 @@ body {
   }
 }
 
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .text-row p {
     font-size: 1.4em;
   }
@@ -75,7 +87,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .text-row p {
     font-size: 1.2em;
   }
@@ -84,7 +96,7 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   .text-row p {
     font-size: 1em;
   }
